@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commune Waitlist Landing Page</title>
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Embed Fonts -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="menu">
+        <nav class="flex">
+          <img src="Assets/Logo.svg" alt="Commune" />
+          <div class="items-menu" id="items-meu">
+          <ul class="menu-links">
+            <div class="close" onclick="hideMenu()" id="closebtn">X</div>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Communities</a></li>
+          </ul>
+          <a href="www.gentry.com.ng" class="btn">Join Waitlist</a>
+        </div>
+        <img src="Assets/Hamburger Menu.svg" alt="Menu" class="Ham" id="ham" onclick="showMenu()"> 
+        
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+
+    <section class="Hero">
+      <div class="container flex">
+        <div class="inner part1">
+          <h3>We are now allowing early-access for users. <a href="#" class="info">Learn more.</a></h3>
+          <h1>Build a highly engaged<br> community with no effort.</h1>
+          <p>Commune offers the tools you need to build a highly engaged community with little to no effort. Simply setup your Commune workspace, and manage everything from members to content from one central dashboard.</p>
+          <form>
+          <input type="email" class="email-input" name="email" id="email" placeholder="Enter your e-mail address">
+          <button type="submit" class="mail">Join Waitlist</button>
+          </form>
+        </div>
+        <div class="inner part2">
+          <img src="Assets/Illustration.png" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <h4>Used by these companies:</h4>
+        <span class="comp">
+          <img src="Assets/Atlassian Icon.svg" alt="Atlassian">
+          <img src="Assets/Behance Icon.svg" alt="Behance">
+          <img src="Assets/Bing Icon.svg" alt="Bing">
+          <img src="Assets/Bitbucket Icon.svg" alt="Bitbucket">
+          <img src="Assets/Dropbox Icon.svg" alt="Dropbox">
+          <img src="Assets/Twitch Icon.svg" alt="Twitch">
+          <img src="Assets/Twitter Icon.svg" alt="Twitter">
+        </span>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
