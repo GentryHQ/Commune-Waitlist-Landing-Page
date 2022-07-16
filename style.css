@@ -214,20 +214,19 @@ h4 {
     border-radius: 15px;
     box-shadow: 0 0 35px rgba(2, 2, 2, 0.123);
     display: none;
-    transition: 39s;
   }
   .active {
     display: block;
   }
   
   .close {
-    background-color: var(--first-color);
     width: 50px;
     border-radius: 50px;
     cursor: pointer;
     font-size: 30px;
     color: var(--body-color);
     margin: auto;
+    display: block;
   } 
   
 
