@@ -25,8 +25,8 @@
 
 ### Screenshot
 
-[Mobile View](./screenshot%20MobileView.png)
-[Desktop View](./DesktopView.png)
+![Mobile View](./screenshot%20MobileView.png)
+![Desktop View](./DesktopView.png)
 
 ### Links
 
