@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: #372865;
+  --body-color: #f6f9fe;
+  --white-color: white;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 3em;
+  margin: 0 auto;
+}
+
+h1,
+h3 {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #6d6f74;
+}
+
+section {
+  padding: 50px 0;
+}
+
+/* Menu And Nav Bar */
+
+.menu {
+  margin-top: 40px;
+}
+
+.Ham, .close {
+  display: none;
+}
+
+.items-menu .active {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li > a:hover {
+  color: var(--first-color);
+}
+
+ul,
+li {
+  display: inline;
+  list-style: none;
+  margin: 0 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6d6f74;
+}
+
+.menu {
+  padding: 10px 0;
+}
+
+a.btn {
+  background-color: var(--first-color);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+a.btn:hover {
+  background-color: #47396d;
+  color: rgb(255, 255, 255);
+}
+
+/* Hero Section */
+
+.part1 {
+  flex: 3;
+  margin-right: 50px;
+}
+.part2 {
+  flex: 2;
+}
+.inner img {
+  width: 90%;
+  height: 100%;
+}
+
+.inner h3 {
+  background-color: var(--first-color);
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  color: var(--body-color);
+  margin-bottom: 20px;
+  font-weight: 200;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.inner h1 {
+  font-size: 50px;
+  color: var(--first-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inner p {
+  color: #6d6f74;
+  margin-bottom: 20px;
+}
+
+a.info {
+  border-bottom: 2px #6d6f74 solid;
+  color: var(--body-color);
+  font-weight: 500;
+}
+a.info:hover {
+  border-bottom: 2px var(--body-color) solid;
+}
+
+/* form style */
+
+.email-input {
+  padding: 15px 5vw;
+  border: none;
+  border: 2px rgba(218, 218, 218, 0.459) solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: rgb(192, 192, 192);
+}
+
+.mail {
+  background-color: var(--first-color);
+  border: none;
+  color: var(--body-color);
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.mail:hover {
+  background-color: #47396d;
+  color: rgb(255, 255, 255);
+}
+
+/* Companies Logo */
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #838383;
+}
+
+.comp img {
+  width: 45px;
+  margin-right: 10px;
+}
+
+/* Media Queries for mobile */
+@media screen and (max-width: 900px) {
+  body {
+    text-align: center;
+  }
+
+  .inner {
+    width: 100%;
+  }
+
+  .part1 h1 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  nav.flex {
+    position: relative;
+  }
+
+  .items-menu {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    height: 70vh;
+    width: 100%;
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgba(2, 2, 2, 0.123);
+    display: none;
+    transition: 39s;
+  }
+  .active {
+    display: block;
+  }
+  
+  .close {
+    background-color: var(--first-color);
+    width: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--body-color);
+    margin: auto;
+  } 
+  
+
+  .menu-links li {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .Ham {
+    display: unset;
+  }
+  .Ham:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
+
+  .container.flex {
+    display: block;
+  }
+
+  #email,
+  .mail {
+    width: 100%;
+  }
+
+  .mail {
+    margin-top: 10px;
+  }
+
+  .inner img {
+    display: none;
+  }
+
+  .container {
+    padding: 5%;
+  }
+
+  .comp img {
+    width: 3;
+  }
+}
+
+
